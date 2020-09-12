@@ -38,6 +38,12 @@ public class Program {
 	sellerdao.insert(sellers);
 	System.out.println("Insert de novo registro: " + sellers.getId());
 	
+System.out.println("\n===TESTE 5 - UPDATE ===");
+	seller = sellerdao.findById(1);
+	seller.setName("Martha Wayne");
+	sellerdao.update(seller);
+	System.out.println("Update completo");
+	
 	}
 
 }
