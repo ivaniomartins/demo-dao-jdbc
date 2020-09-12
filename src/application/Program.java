@@ -1,5 +1,6 @@
 package application;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -33,13 +34,12 @@ public class Program {
 		for (Seller obj : list) {
 			System.out.println(obj);
 		}
-		/*
-		 * System.out.println("\n===TESTE 4 - INSERT ===");
-		 * 
-		 * Seller sellers = new Seller(null, "Greg Newton", "grege@gmail.com", new
-		 * Date(), 4000.00, department); sellerdao.insert(sellers);
-		 * System.out.println("Insert de novo registro: " + sellers.getId());
-		 */
+		
+		 System.out.println("\n===TESTE 4 - INSERT ===");
+		 
+		  Seller sellers = new Seller(null, "Greg Newton", "grege@gmail.com", new Date(), 4000.00, department); sellerdao.insert(sellers);
+		  System.out.println("Insert de novo registro: " + sellers.getId());
+		 
 
 		System.out.println("\n===TESTE 5 - UPDATE ===");
 		seller = sellerdao.findById(1);

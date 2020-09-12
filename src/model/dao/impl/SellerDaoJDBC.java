@@ -215,7 +215,7 @@ public class SellerDaoJDBC implements SellerDao {
 					map.put(rs.getInt("DepartmentID"), dep);
 				}
 
-				;
+				
 				Seller obj = instanciateSeller(rs, dep);
 				list.add(obj);
 
